@@ -34,5 +34,42 @@ The design specifications for this car indicate the variance of the suspension c
 
 ## T-Tests on Suspension Coils
 
+### T-Test to Compare All Manufacturing Lots vs. Mean PSI for Population = 1500
+The following code was used in RStudio to run 4 different t-tests on the PSI for the coils.  
+
+<p align="center">
+  <img src = https://github.com/lauras521/MechaCar_Statistical_Analysis/blob/af4da05d70cc42ef8bedd708b3a393b42bf38861/Resources/Deliverable3_RStudioCode.PNG>
+</p>
+
+The null hypothesis to compare all 3 manufacturing lots as one sample to the population mean is the following:
+
+H<sub>0</sub> : There is no statistical difference between the observed sample mean and its presumed population mean.
+
+After running the t-test, you can see the p-value = 0.06.  Since the p-value is not less than 0.05 we cannot reject the null hypothesis and therefore conclude that there is no statistical difference between the observed sample mean and its presumed population mean.  
+
+<p align="center">
+  <img src = https://github.com/lauras521/MechaCar_Statistical_Analysis/blob/af4da05d70cc42ef8bedd708b3a393b42bf38861/Resources/Deliverable3_RStudio_Par1.PNG>
+</p>
+
+### T-Tests to Compare Each Manufacturing Lot vs. Mean PSI for Population = 1500
+
+The null hypothesis to compare each manufacturing lot as one sample to the population mean is the following:
+
+* H<sub>0</sub> : There is no statistical difference between the observed sample mean of Lot 1 and its presumed population mean.
+* H<sub>0</sub> : There is no statistical difference between the observed sample mean of Lot 2 and its presumed population mean.
+* H<sub>0</sub> : There is no statistical difference between the observed sample mean of Lot 3 and its presumed population mean.
+
+
+After running three t-tests, you can see the following:
+
+* Lot 1: p-value = 1.  Since the p-value is not less than 0.05 we cannot reject the null hypothesis and therefore conclude that there is no statistical difference between the Lot 1 mean and its presumed population mean.  
+* Lot 2: p-value = 0.6072.  Since the p-value is not less than 0.05 we cannot reject the null hypothesis and therefore conclude that there is no statistical difference between the Lot 2 mean and its presumed population mean.  
+* Lot 3: p-value = 0.04168.  Since the p-value is less than 0.05 we reject the null hypothesis and therefore conclude that there is a statistical difference between the Lot 3 mean and its presumed population mean.  
+
+<p align="center">
+  <img src = https://github.com/lauras521/MechaCar_Statistical_Analysis/blob/af4da05d70cc42ef8bedd708b3a393b42bf38861/Resources/Deliverable3_RStudio_Part2.PNG>
+</p>
+
+
 ## Study Design: MechaCar vs. Competition
 
